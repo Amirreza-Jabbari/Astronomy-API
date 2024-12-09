@@ -23,7 +23,7 @@ class CelestialCalculator:
             self.ts = load.timescale()
             
             # Load comprehensive SPICE kernel
-            self.planets = load('de440.bsp')
+            self.planets = load('de440s.bsp')
             
             # Create observer location
             self.location = Topos(
