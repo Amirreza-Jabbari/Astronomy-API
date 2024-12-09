@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "astronomy_api/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "astronomy_api/wsgi.py"
+        }
+    ]
+}
