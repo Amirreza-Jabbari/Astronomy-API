@@ -7,7 +7,6 @@
 1. [Overview](#overview)
 2. [Installation](#installation)
 3. [API Endpoints](#api-endpoints)  
-   - [GET /api/astronomy/](#get-apiastronomy)  
    - [POST /api/astronomy/](#post-apiastronomy)  
 4. [Serializers](#serializers)
 5. [Views](#views)
@@ -32,18 +31,6 @@ pip install -r requirements.txt
 ---
 
 ## API Endpoints
-
-### GET `/api/astronomy/`
-Retrieve celestial object data based on query parameters.
-
-**Query Parameters:**
-- `latitude` (float): Latitude of the observation point (default: 38.775867).
-- `longitude` (float): Longitude of the observation point (default: -84.39733).
-- `elevation` (float): Elevation in meters (default: 0).
-- `start_date` (ISO 8601): Start date for calculations (optional).
-- `end_date` (ISO 8601): End date for calculations (optional).
-
----
 
 ### POST `/api/astronomy/`
 Retrieve celestial object data based on JSON payload.
