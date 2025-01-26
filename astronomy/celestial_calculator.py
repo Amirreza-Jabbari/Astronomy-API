@@ -253,7 +253,7 @@ class CelestialCalculator:
         # Normalize RA to be between 0 and 360
         ra = ra % 360
 
-        # Add your constellation definitions
+        # constellation definitions
         constellations = {
             # Northern Hemisphere
             'and': {'id': 'and', 'short': 'And', 'name': 'Andromeda', 'ra_range': (0, 40), 'dec_range': (20, 50)},
